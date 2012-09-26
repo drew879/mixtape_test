@@ -1,0 +1,12 @@
+<%= notice %>
+<br /><br />
+<%= form_tag '/login' do |form| %>
+  <p><b>Name:</b></p>
+  <p><%= text_field_tag 'session[name]' %></p>
+  <p><b>E-mail:</b></p>
+  <p><%= text_field_tag 'session[email]' %></p>
+  <p><b>Password:</b></p>
+  <p><%= password_field_tag 'session[password]' %></p>
+  <br />
+  <p><%= submit_tag 'Login to MixTapeApp!', :class => "btn btn-primary" %></p>
+<% end %>

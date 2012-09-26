@@ -1,0 +1,7 @@
+<div class="field">
+  <%= form.fields_for :songs do |sf| %>
+    <%= sf.label :name, 'Song Name' %><br />
+  	<%= sf.text_field :name %>
+	<%= sf.check_box :_destroy %><br />
+  <% end %>
+</div>

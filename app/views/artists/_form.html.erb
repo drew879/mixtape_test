@@ -1,0 +1,14 @@
+<%= form_for(@artist) do |f| %>
+  <%= render :partial => 'shared/errors', :locals => {:model => @artist} %>
+
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </div>
+
+  <%= render :partial => 'shared/song', :locals => {:form => f} %>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

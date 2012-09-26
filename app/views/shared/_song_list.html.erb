@@ -1,0 +1,4 @@
+<div class="songbox">
+  <%= check_box_tag "#{name}[song_ids][]", song.id, parent.songs.include?(song) %>
+  <%= song.name %>
+</div>

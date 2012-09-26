@@ -1,0 +1,8 @@
+<p id="notice"><%= notice %></p>
+
+  <h3>Mixtape: <%= @mixtape.name %></h3>
+
+<%= render :partial => 'shared/song_show', :collection => @mixtape.songs, :as => :song %>
+
+<%= link_to 'Edit', edit_mixtape_path(@mixtape) %> |
+<%= link_to 'Back', mixtapes_path %>

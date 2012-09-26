@@ -1,0 +1,19 @@
+<p>
+  <b>Name:</b>
+  <%= song.name %>
+  <br />
+  <b>Artist:</b>
+  <%= song.artist_name %>
+  <br />
+  <b>Album:</b>
+  <%= song.album_name %>
+  <br />
+  <b>Genres:</b>
+  <%= song.genres.map(&:name).join(", ") %>
+  <%= '(None)' if song.genres.count == 0 %>
+  <br />
+  <b>Mixtapes:</b>
+  <%= song.mixtapes.map(&:name).join(", ") %>
+  <%= '(None)' if song.mixtapes.count == 0 %>
+  <br />
+</p>

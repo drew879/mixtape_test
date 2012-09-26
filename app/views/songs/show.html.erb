@@ -1,0 +1,6 @@
+<p id="notice"><%= notice %></p>
+
+<%= render :partial => 'shared/song_show', :locals => { :song => @song } %>
+
+<%= link_to 'Edit', edit_song_path(@song) %> |
+<%= link_to 'Back', songs_path %>
